@@ -27,7 +27,7 @@
         <Message Importance="high" Text="Running post-build move."/>
         <Copy
                 SourceFiles="$(TargetPath)"
-                DestinationFolder="/home/helskog/.local/share/Steam/steamapps/common/VRising/VRising_Server/Plugins"
+                DestinationFolder="/home/helskog/Development/V Rising Server/server/BepInEx/plugins"
         />
     </Target>
 
