@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="BepInEx.Core" Version="6.0.0-pre.1"/>
+        <PackageReference Include="BepInEx.PluginInfoProps" Version="2.1.0"/>
+        <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.735"/>
+        <PackageReference Include="VRising.Unhollowed.Client" Version="1.1.6.9161201"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="Patches\"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include=".github\workflows\build.yml" />
+      <Content Include=".template.config\template.json" />
+    </ItemGroup>
+
+    <Target Name="CustomPostBuild" AfterTargets="Build" Condition="'$(GITHUB_ACTIONS)' != 'true'">
+        <Message Importance="high" Text="Running post-build move."/>
+        <Copy
+                SourceFiles="$(TargetPath)"
+                DestinationFolder="/home/helskog/.local/share/Steam/steamapps/common/VRising/VRising_Server/Plugins"
+        />
+    </Target>
+
+</Project>

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/template",
+  "author": "helskog",
+  "classifications": ["VRising", "Plugin"],
+  "identity": "VRising.VTemplate",
+  "name": "Starter project for V Rising mods",
+  "shortName": "VTemplate",
+  "sourceName": "VTemplate",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
