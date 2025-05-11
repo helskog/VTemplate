@@ -15,15 +15,14 @@
   },
   "postActions": [
     {
-      "actionId": "C8B3E6C5-852E-4A9B-8C43-328F561D897A",
-      "args": {
-        "executable": "./setup_git.sh"
-      },
       "manualInstructions": [
         { "text": "Run ./setup_git.sh to initialize Git and push to GitHub." }
-      ],
-      "continueOnError": true,
-      "description": "Initialize Git repository and push to GitHub"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "exclude": [ ".template.config/**" ]
     }
   ],
   "tags": {

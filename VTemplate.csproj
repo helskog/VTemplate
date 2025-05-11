@@ -12,10 +12,7 @@
         <PackageReference Include="BepInEx.PluginInfoProps" Version="2.1.0"/>
         <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.735"/>
         <PackageReference Include="VRising.Unhollowed.Client" Version="1.1.6.9161201"/>
-    </ItemGroup>
-
-    <ItemGroup>
-        <Folder Include="Patches\"/>
+        <PackageReference Include="VRising.VampireCommandFramework" Version="0.10.0" />
     </ItemGroup>
 
     <ItemGroup>
