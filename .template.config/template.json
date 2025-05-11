@@ -15,9 +15,12 @@
   },
   "postActions": [
     {
+      "actionId": "E2EFCF1B-D3AE-4C9A-95A5-6A3C6C4A8F6B",
       "manualInstructions": [
         { "text": "Run ./setup_git.sh to initialize Git and push to GitHub." }
-      ]
+      ],
+      "continueOnError": true,
+      "description": "Display git setup instructions"
     }
   ],
   "sources": [
