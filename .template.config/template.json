@@ -6,6 +6,13 @@
   "name": "Starter project for V Rising mods",
   "shortName": "VTemplate",
   "sourceName": "VTemplate",
+  "symbols": {
+    "description": {
+      "type": "parameter",
+      "datatype": "text",
+      "replaces": "descriptionString"
+    }
+  },
   "postActions": [
     {
       "actionId": "C8B3E6C5-852E-4A9B-8C43-328F561D897A",

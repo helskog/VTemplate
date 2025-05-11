@@ -4,8 +4,8 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "helskog"
 name = "VTemplate"
-versionNumber = "1.0.4"
-description = "A server plugin made to enable trading and swapping prisoners between clans, without the hassle of manually transferring them."
+versionNumber = "0.1.0"
+description = "descriptionString"
 websiteUrl = "https://github.com/helskog/VTemplate"
 containsNsfwContent = false
 
