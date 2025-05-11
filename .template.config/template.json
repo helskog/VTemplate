@@ -25,7 +25,11 @@
   ],
   "sources": [
     {
-      "exclude": [ ".template.config/**" ]
+      "exclude": [
+      ".template.config/**",
+      ".git/**",
+      ".git/**/*"
+      ]
     }
   ],
   "tags": {
