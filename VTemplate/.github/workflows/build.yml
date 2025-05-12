@@ -2,9 +2,7 @@ name: Build
 
 on:
   push:
-    branches: ["master"]
-  pull_request:
-    branches: ["master"]
+    branches: ["release"]
 
 jobs:
   build:
@@ -64,3 +62,6 @@ jobs:
           prerelease: true
           tag_name: v${{ env.GitVersion_MajorMinorPatch }}
           files: ./build/helskog-VTemplate-${{ steps.gitversion.outputs.majorMinorPatch }}.zip
+
+      - name: Publish Thunderstore
+        run: tcli publish --config-path ./thunderstore.toml --token ${{ secrets.THUNDERSTORE_SECRET }} --file ./build/helskog-VTemplate-${{ steps.gitversion.outputs.majorMinorPatch }}.zip
